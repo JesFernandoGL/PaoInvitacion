@@ -1,0 +1,449 @@
+*{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body{
+    background-color: #100705;
+}
+
+body:has(.ModalActive){
+    overflow: hidden;
+}
+
+.FontSemibold{
+    font-weight: 600;
+}
+
+main{    
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.BtnMusicWrapp{
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 2;
+}
+
+.BtnMusicRep{
+    background-color: #e52d28;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px 0 rgb(25 23 173 / 40%);   
+}
+
+.BtnMusicRep:has(~ .ActiveMusicTrack:nth-of-type(4)) {
+    background-color: #f2b31c;
+}
+
+.BtnMusicWrapp-ControlWrapp{
+    background-color: #e52d28;
+    border-radius: 50%;
+}
+
+.BtnMusicWrapp-ControlNext{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px 0 rgb(25 23 173 / 40%);
+}
+
+.BtnMusicWrapp-ControlWrapp:has(~ .ActiveMusicTrack:nth-of-type(4)){
+    background-color: #f2b31c;
+}
+
+.BtnMusicPlay{
+    width: 40px;
+}
+
+.BtnMusicPause{
+    display: none;
+    width: 28px;
+}
+
+.BtnMusicWrapp-ControlNext{
+    display: none;
+}
+.BtnMusicNext{
+    width: 28px;
+}
+
+.BtnMusicWrapp.MusicActive .BtnMusicPause{
+    display: block;
+}
+.BtnMusicWrapp.MusicActive .BtnMusicPlay{
+    display: none;
+}
+
+.BtnMusicWrapp.MusicActive .BtnMusicWrapp-ControlNext{
+    display: flex;
+}
+
+.HeaderInv{    
+    /*position: sticky;*/
+    /*top: 0;*/
+}
+
+.HeaderInv-Wrapp{
+    position: relative;
+}
+
+.HeaderInv-Img{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+}
+
+.HeaderOvelay{    
+    background-image: linear-gradient(0deg, #170807 0%, #1a0605eb 12%, #5a3b1300 45%, #5a3b1300 100%), radial-gradient(transparent 66%, #1c07077a);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.HeaderContent{
+    font-weight: 700;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.HeaderTitle{
+    font-size: 98px;
+    line-height: 80px;  
+    color: #fff;
+}
+
+.HeaderSubtitle{
+    font-size: 86px;
+    line-height: 68px;
+    margin-top: 6px;
+    color: #fff;
+}
+
+.GlassComp{
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 40px 16px 40px 16px;
+    border-bottom: 1px solid #fff;    
+}
+
+.MainContetInv{
+    padding: 40px 20px 50px 20px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden; 
+}
+
+.MainContetInv-BG{
+    background-image: url(./assets/bg-top2.jpg);
+    background-repeat: repeat;
+    background-position: -150px 60px;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* opacity: .7; */
+}
+
+.DateInv-Sec{
+    margin-top: 0;
+}
+
+.CardTitle{
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.CardSubtitle{
+    font-family: "Amaranth", sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    margin-top: 4px; 
+}
+
+.DateInv-FechaWrapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #1A1A8D;
+    margin-top: 4px;
+}
+
+.DateInv-Counter-Title{
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.DateInv-Counter{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.DateInv-CounterWrapp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+.DateInv-Counter-Num{
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.DateInv-Counter-Text{
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.PlaceInv-Sec{
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.InvImgContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.InvImgContent-Img{
+    width: 100px;
+}
+
+.InvImgContent-Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.InvImgContent-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.InvImgContent-Text{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.InvImgContet-Btn{
+    background-image: linear-gradient(32deg, #f3ae45 20%, #fd2bc6);
+    color: #fff;
+    padding: 14px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.DrinkInv-Text{
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+}
+
+.Timeline-Section{
+    align-self: flex-start;    
+    padding: 12px 0;
+    width: 100%;
+}
+
+.TimelineInv-Sec{
+    padding: 40px 0;
+}
+
+.Timeline-Section::-webkit-scrollbar {
+    display: none;
+}
+
+.TimelineWrapp{
+    width: fit-content;
+    padding-bottom: 6px;
+}
+
+.Timeline-PhotoWrapp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.Timeline-Memory{
+    flex: 0 0 calc((100% / 2) - 8px);    
+    position: relative;
+    border: 4px solid #fff;
+    border-bottom: 32px solid #fff;
+}
+
+.Timeline-Memory:nth-of-type(2n) {
+    top: 110px;
+}
+
+.Timeline-Memory:first-child{
+    padding-left: 0;
+}
+
+.Timeline-MemoryImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    vertical-align: middle;
+}
+
+.ModalGalleryWrap{
+    height: 90dvh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(20 20 20 / 80%);
+    border-top: 5px solid #cfcfcf;
+    border-radius: 16px 16px 0 0;
+    backdrop-filter: blur(12px);
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transform: translateY(120%);
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 40%;
+    z-index: 10;
+}
+
+.ModalGalleryWrap.ModalActive{
+    transform: translateY(0);
+    opacity: 100%;
+}
+
+.ModalGallery-CloseBtn{
+    border-radius: 50px;
+    border: 1px solid #fffefe;
+    background-color: #c1c1c1;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: 700;
+    z-index: 10;
+    font-size: 20px;
+}
+
+.ModalGallery-WaveTop{
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ModalGallery-WaveBottom{
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ModalGallery-Carrusel{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.ModalGallery-Carrusel::-webkit-scrollbar{
+    display: none;
+}
+
+.ModalGallery-Carrusel img{
+    width: calc(100% - 80px);
+    scroll-snap-align: center;
+    box-shadow: 0 4px 8px 0 rgb(26 8 61 / 85%);
+    border-radius: 8px;
+    vertical-align: middle;
+    max-height: 600px;
+}
+
+.ModalGallery-Carrusel img:first-of-type{
+    margin-left: 40px;
+}
+
+.ModalGallery-Carrusel img:last-of-type{
+    margin-right: 40px;
+}
+
+/*Day Invite*/
+.DayInvite .DateInv-CounterWrapp,
+.NextDayInvite .DateInv-CounterWrapp{
+    display: none;
+}
+
+.DayInvite .DateInv-Counter-Title{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+}

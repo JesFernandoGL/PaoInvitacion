@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>Pao cumpleaños | Festeja conmigo mi cumpleaños</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1"></script>
+</head>
+<body>
+    <main>
+        <header class="HeaderInv">
+            <div class="HeaderInv-Wrapp">
+                <img class="HeaderInv-Img" src="./assets/23.jpg">
+                <div class="HeaderOvelay"></div>
+                <div class="HeaderContent animate__animated">
+                    <p class="HeaderTitle">Paola</p>
+                    <p class="HeaderSubtitle">21</p>
+                </div>
+            </div>
+        </header>
+        <div class="MainContetInv">
+            <div class="MainContetInv-BG"></div>
+            <div class="BtnMusicWrapp">
+                <div class="BtnMusicRep">
+                    <img class="BtnMusicPlay" src="./assets/sonido.png">
+                    <img class="BtnMusicPause" src="./assets/boton-de-pausa.png">
+                </div>
+                <div class="BtnMusicWrapp-ControlWrapp">
+                    <div class="BtnMusicWrapp-ControlNext">
+                        <img class="BtnMusicNext" src="./assets/next-control.png" alt="">
+                    </div>                            
+                </div>
+                <audio class="AudioMusic ActiveMusicTrack" data-id="1" preload="none">
+                    <source src="./assets/mus1.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="AudioMusic" data-id="2" preload="none">
+                    <source src="./assets/mus2.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="AudioMusic" data-id="3" preload="none">
+                    <source src="./assets/mus3.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <section class="DateInv-Sec GlassComp">
+                <div class="DateInv-Header">
+                    <p class="DateInv-Title CardTitle">Festeja conmigo</p>
+                    <div class="DateInv-FechaWrapp">
+                        <p class="DateInv-Day">21 Marzo</p>
+                    </div>
+                </div>
+                <div class="DateInv-Counter animate__animated">
+                    <p class="DateInv-Counter-Title">Faltan:</p>
+                    <div class="DateInv-CounterWrapp">
+                        <div class="DateInv-CounterElem">
+                            <p class="DateInv-Counter-Day DateInv-Counter-Num"></p>
+                            <p class="DateInv-Counter-Text">Dias</p>
+                        </div>
+                        <div class="DateInv-CounterElem">
+                            <p class="DateInv-Counter-Hrs DateInv-Counter-Num"></p>
+                            <p class="DateInv-Counter-Text">Hrs</p>
+                        </div>
+                        <div class="DateInv-CounterElem">
+                            <p class="DateInv-Counter-Min DateInv-Counter-Num"></p>
+                            <p class="DateInv-Counter-Text">Min</p>
+                        </div>
+                        <div class="DateInv-CounterElem">
+                            <p class="DateInv-Counter-Seg DateInv-Counter-Num"></p>
+                            <p class="DateInv-Counter-Text">Seg</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="PlaceInv-Sec GlassComp">
+                <div class="InvImgContent">
+                    <div class="InvImgContent-Header">
+                        <img class="InvImgContent-Img animate__animated" src="./assets/ubicacion-mapa-ilustracion.png">
+                        <p class="InvImgContent-Title CardTitle">Ubicación</p>
+                    </div>
+                    <div class="InvImgContent-Content">
+                        <div>
+                            <p class="InvImgContent-Text FontSemibold">“Terraza: El encanto”</p>                            
+                            <p class="InvImgContent-Text">Te espero a partir de las <span class="FontSemibold">14:30 pm</span></p>
+                            <p class="InvImgContent-Text">Puedes ver la ubicación en Maps con el botón</p>
+                        </div>
+                        <a class="InvImgContet-Btn" href="https://maps.app.goo.gl/uZ3zUQB6sYEUe2Sy7" target="_blank">Ver</a>
+                    </div>
+                </div>            
+            </section>  
+            <section class="DrinkInv-Sec GlassComp">
+                <div class="InvImgContent">
+                    <div class="InvImgContent-Header">
+                        <img class="InvImgContent-Img animate__animated" src="./assets/asistencia.png">
+                        <p class="InvImgContent-Title CardTitle">Asistencia</p>
+                    </div>
+                    <p class="InvImgContent-Text">Mándame un WhatsApp y confirma tu asistencia para festejar juntos.</p>
+                    <div class="InvImgContent-Content">
+                        <a class="InvImgContet-Btn" href="https://api.whatsapp.com/send/?phone=5578518660&text=Hola+Pao+confirmo+mi+asistencia&type=phone_number&app_absent=0" target="_blank">Confirmar asistencia</a>
+                    </div>
+                </div>           
+            </section>
+            <section class="TimelineInv-Sec GlassComp">
+                <div class="InvImgContent">
+                    <div class="InvImgContent-Header">
+                        <div class="InvImgContent-HeaderTitles">
+                            <img class="InvImgContent-Img animate__animated" src="./assets/camara-icono.png">
+                            <p class="InvImgContent-Title CardTitle">Galleria</p>
+                        </div>
+                    </div>
+                    <a class="InvImgContet-Btn BtnGallery">Ver galería</a>
+                    <div class="Timeline-Section">
+                        <div class="TimelineWrapp">
+                            <div class="Timeline-PhotoWrapp">                        
+                                <div class="Timeline-Memory animate__animated" data-id="1">                            
+                                    <img class="Timeline-MemoryImg" src="./assets/1.jpg">                        
+                                </div>
+                                <div class="Timeline-Memory animate__animated" data-id="2">
+                                    <img class="Timeline-MemoryImg" src="./assets/2.jpg">                        
+                                </div>
+                                <div class="Timeline-Memory animate__animated" data-id="3">
+                                    <img class="Timeline-MemoryImg" src="./assets/3.jpg">                        
+                                </div>
+                                <div class="Timeline-Memory animate__animated" data-id="4">
+                                    <img class="Timeline-MemoryImg" src="./assets/4.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="5">
+                                    <img class="Timeline-MemoryImg" src="./assets/5.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="6">
+                                    <img class="Timeline-MemoryImg" src="./assets/6.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="7">
+                                    <img class="Timeline-MemoryImg" src="./assets/7.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="8">
+                                    <img class="Timeline-MemoryImg" src="./assets/8.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="9">
+                                    <img class="Timeline-MemoryImg" src="./assets/9.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="10">
+                                    <img class="Timeline-MemoryImg" src="./assets/10.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="11">
+                                    <img class="Timeline-MemoryImg" src="./assets/11.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="12">
+                                    <img class="Timeline-MemoryImg" src="./assets/12.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="13">
+                                    <img class="Timeline-MemoryImg" src="./assets/13.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="14">
+                                    <img class="Timeline-MemoryImg" src="./assets/14.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="15">
+                                    <img class="Timeline-MemoryImg" src="./assets/15.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="16">
+                                    <img class="Timeline-MemoryImg" src="./assets/16.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="17">
+                                    <img class="Timeline-MemoryImg" src="./assets/17.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="18">
+                                    <img class="Timeline-MemoryImg" src="./assets/18.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="19">
+                                    <img class="Timeline-MemoryImg" src="./assets/19.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="20">
+                                    <img class="Timeline-MemoryImg" src="./assets/20.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="21">
+                                    <img class="Timeline-MemoryImg" src="./assets/21.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="22">
+                                    <img class="Timeline-MemoryImg" src="./assets/22.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="23">
+                                    <img class="Timeline-MemoryImg" src="./assets/23.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="24">
+                                    <img class="Timeline-MemoryImg" src="./assets/24.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="25">
+                                    <img class="Timeline-MemoryImg" src="./assets/25.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="26">
+                                    <img class="Timeline-MemoryImg" src="./assets/26.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="27">
+                                    <img class="Timeline-MemoryImg" src="./assets/27.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="28">
+                                    <img class="Timeline-MemoryImg" src="./assets/28.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="29">
+                                    <img class="Timeline-MemoryImg" src="./assets/29.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="30">
+                                    <img class="Timeline-MemoryImg" src="./assets/30.jpg">                        
+                                </div>           
+                                <div class="Timeline-Memory animate__animated" data-id="31">
+                                    <img class="Timeline-MemoryImg" src="./assets/31.jpg">                        
+                                </div>           
+                                  
+                            </div>  
+                        </div>                      
+                    </div>                    
+                </div>                          
+            </section>
+        </div>
+
+        <div class="ModalGalleryWrap">            
+            <div class="ModalGallery-WaveTop"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,129.78 C264.67,25.17 326.75,205.77 502.82,103.13 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgb(183 26 26 / 40%);"></path></svg></div>
+            <div class="ModalGallery-WaveBottom"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.56,43.92 C224.60,119.91 353.83,-24.16 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(183 26 26 / 40%);"></path></svg></div>
+            <span class="ModalGallery-CloseBtn">X</span>
+            <div class="ModalGallery-Carrusel">
+                <img src="./assets/1.jpg">
+                <img src="./assets/2.jpg">
+                <img src="./assets/3.jpg">
+                <img src="./assets/4.jpg">
+                <img src="./assets/5.jpg">
+                <img src="./assets/6.jpg">
+                <img src="./assets/7.jpg">
+                <img src="./assets/8.jpg">
+                <img src="./assets/9.jpg">
+                <img src="./assets/10.jpg">
+                <img src="./assets/11.jpg">
+                <img src="./assets/12.jpg">
+                <img src="./assets/13.jpg">
+                <img src="./assets/14.jpg">
+                <img src="./assets/15.jpg">
+                <img src="./assets/16.jpg">
+                <img src="./assets/17.jpg">
+                <img src="./assets/18.jpg">
+                <img src="./assets/19.jpg">
+                <img src="./assets/20.jpg">
+                <img src="./assets/21.jpg">
+                <img src="./assets/22.jpg">
+                <img src="./assets/23.jpg">
+                <img src="./assets/24.jpg">
+                <img src="./assets/25.jpg">
+                <img src="./assets/26.jpg">
+                <img src="./assets/27.jpg">
+                <img src="./assets/28.jpg">
+                <img src="./assets/29.jpg">
+                <img src="./assets/30.jpg">
+                <img src="./assets/31.jpg">
+            </div>
+        </div>
+
+        
+    </main>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js.js"></script>
+</body>
+</html>
